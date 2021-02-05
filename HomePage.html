@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Landing</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+</head>
+    <div id="contact" class="full-height p-4 ">
+        <div class="row pb-5">
+            <div class="col-lg-6 pt-4 my-auto"></div>
+            <div class="col-lg-6 my-auto pt-5">
+                <div class="text-center mb-4">
+                    <h3>Ingrese la Informacion</h3>
+                </div>
+                <div class="border p-3 p-md-5 bg-white rounded shadow">
+                    <form action="contact.php" method="POST">
+                        <div class="form-group">
+                            <input type="Nombre"
+                                class="form-control"
+                                placeholder="Ingrese su nombre"
+                                name="Nombre" >
+                        </div>
+                        <div class="form-group">
+                            <input type="Telefono"
+                                class="form-control"
+                                placeholder="Ingrese su Numero de Telefono"
+                                name="Telefono">
+                        </div>
+                             <button type="submit" class="btn btn-success mt-3" name="send">ENVIAR</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+</html>
+  
+
+
+<script>
+
+export default {
+ 
+  data () {
+
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+#contact{
+    background-color: #92D2F2;
+    background: url('./assets/reflection.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+}
+.full-height{
+  
+  min-height: 100vh;
+
+}
+
+</style>
