@@ -4,7 +4,10 @@ if (isset($_POST['send'])){
     if(!empty($_POST['Nombre'] && !empty($_POST['Telefono']))){
         $name = $_POST['Nombre'];
         $phone = $_POST['Telefono'];
-
+        $header = 'Informacion';
+        $header = 'From: Your name <info@address.com>';
+        $header.= 'Reply-To: info@address.com'; 
+        $header.= 'X-Mailer: PHP/'. phpversion();
 
         $mensaje = '
 <html>
@@ -23,12 +26,10 @@ if (isset($_POST['send'])){
 </body>
 </html>
 ';
-$header = 'Informacion';
-$header = 'From: Your name <info@address.com>';
-$header.= 'Reply-To: info@address.com'; 
-$header.= 'X-Mailer: PHP/'. phpversion();
 
-        mail($addressee, $name ,$phone , $header , $mensaje);
+
+        mail($addressee,  $header , $mensaje);
+        
     }
 }
 
