@@ -1,5 +1,5 @@
 <?php
-$addressee = 'reonghostt@gmail.com';
+$addressee = 'reconghostt@gmail.com';
 if (isset($_POST['send'])){
     if(!empty($_POST['Nombre'] && !empty($_POST['Telefono']))){
         $name = $_POST['Nombre'];
